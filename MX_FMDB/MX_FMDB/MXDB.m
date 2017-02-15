@@ -142,7 +142,7 @@
         for (NSString *key in keys) {
             [dict setValue:[set stringForColumn:key] forKey:key];
         }
-        [array addObject:dict];
+        [array addObject:[dict copy]];
     }
     return array;
     
